@@ -1,7 +1,0 @@
-sudo: false
-language: go
-os:
-  - linux
-  - osx
-go:
-  - 1.15.x

@@ -114,8 +114,9 @@ func New(opts Options) (*Engine, error) {
 // It panics on errors.
 //
 // Usage:
-//  redirects := Load("redirects.yml")
-//  http.ListenAndServe(":8080", redirects(router))
+//
+//	redirects := Load("redirects.yml")
+//	http.ListenAndServe(":8080", redirects(router))
 //
 // See `New` package-level function too.
 func Load(filename string) func(http.Handler) http.Handler {
@@ -147,7 +148,8 @@ func (e *Engine) debugf(format string, args ...interface{}) {
 // It is http.Handler wrapper that should be registered at the
 // top of the http application server.
 // Usage:
-//  http.ListenAndServe(":8080", rw.Handler(router))
+//
+//	http.ListenAndServe(":8080", rw.Handler(router))
 func (e *Engine) Handler(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		e.rewrite(w, r, next)

@@ -1,6 +1,6 @@
 # Rewrite
 
-[![build status](https://img.shields.io/travis/com/kataras/rewrite/main.svg?style=for-the-badge&logo=travis)](https://travis-ci.com/github/kataras/rewrite) [![report card](https://img.shields.io/badge/report%20card-a%2B-ff3333.svg?style=for-the-badge)](https://goreportcard.com/report/github.com/kataras/rewrite) [![godocs](https://img.shields.io/badge/go-%20docs-488AC7.svg?style=for-the-badge)](https://pkg.go.dev/github.com/kataras/rewrite)
+[![build status](https://img.shields.io/github/workflow/status/kataras/rewrite/CI/master?style=for-the-badge)](https://github.com/kataras/rewrite/actions) [![report card](https://img.shields.io/badge/report%20card-a%2B-ff3333.svg?style=for-the-badge)](https://goreportcard.com/report/github.com/kataras/rewrite) [![godocs](https://img.shields.io/badge/go-%20docs-488AC7.svg?style=for-the-badge)](https://pkg.go.dev/github.com/kataras/rewrite)
 
 Like [Apache mod_rewrite](https://httpd.apache.org/docs/2.4/rewrite/) but for Golang's [net/http](https://golang.org/pkg/net/http/). Initially created for the [Iris Web Framework](https://github.com/kataras/iris) a long time ago. The success of its usefulness is well known as many others have copied and moved the [original source code](https://github.com/kataras/iris/tree/master/middleware/rewrite) into various frameworks since then, if you deem it necessary, you are free to do the same.
 
